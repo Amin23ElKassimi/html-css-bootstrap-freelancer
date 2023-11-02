@@ -1,10 +1,68 @@
+
+/* My Style Sheet */
 .my_wrapper{
-    max-width: 900px;
+    max-width: 1000px;
     margin: 0 auto;
 }
-
-
+header{
+    background-color: #1abc9c;
+}
 
 .bg-navcolor{
     background-color: #303d4e;
 }
+
+.navbar a{
+    color: white;
+}
+
+
+
+header img{
+    width: 200px;
+    height: 200px;
+}
+
+.strip{
+    height: 2px;
+    background-color: white;
+    width: 300px;
+    display: inline;
+}
+
+ /* ------------------  Media Queris------------------ */
+ 
+ 
+ /* // X-Small devices (portrait phones, less than 576px) */
+ @media (min-width: 520.98px) { 
+
+    h2{
+        font-size: 3 rem;
+    }
+ 
+  }
+ 
+ /* // Small devices (landscape phones, less than 768px) */
+ @media (min-width: 767.98px) { 
+
+    h2{
+        font-size: 4 rem;
+    }
+ 
+
+ }
+ 
+ /* // Medium devices (tablets, less than 992px) */
+ @media (min-width: 991.98px) { 
+
+    h2{
+        font-size: 6 rem;
+    }
+
+
+ }
+
+
+
+
+
