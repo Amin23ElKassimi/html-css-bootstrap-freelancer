@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
+     <!-- modalità "responsive", -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Title web page Index -->
     <title>Bootstrap Freelncer </title>
@@ -19,11 +20,11 @@
     <header>
         <!-- Nabar -->
         <nav class="navbar navbar-expand-lg bg-navcolor text-light">
-            <div class="container-fluid px-5">
+            <div class="container-fluid">
               <a class="text-decoration-none" href="#">
                     <h1>Start Bootstrap</h1>
               </a>
-              <button class="navbar-toggler d-block d-sm-none" a>
+              <button class="navbar-toggler d-block d-sm-none" >
                 <span class="navbar-toggler-icon"></span>
               </button>
               <div class="d-none d-sm-block">
@@ -44,9 +45,9 @@
         <div class="container text-center text-light">
                 <div class="mt-5">
                     <img src="img/avatar.svg" alt="">
-                    <h2>
+                    <div class="user-text">
                         START BOOTSTRAP
-                    </h2>
+                    </div>
                 </div>
                 <i class="fa-solid fa-star"></i>
                 <div class="pb-5">
@@ -57,7 +58,42 @@
     <!-- Main -->
     <main>
         <!-- PORTFOLIO -->
-        <section></section>
+        <section id="portfolio" class="container text-center">
+            <div class="row">
+                <h2>PORTFOLIO</h2>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class=" rounded bg-gruna mb-3">
+                        <img src="img/cabin.png" alt="">
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="rounded bg-cake mb-3">
+                        <img src="img/cake.png" alt="">
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="rounded bg-circus mb-3">
+                        <img src="img/circus.png" alt="">
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="rounded bg-game mb-3">
+                        <img src="img/game.png" alt="">
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="rounded bg-safe mb-3">
+                        <img src="img/safe.png" alt="">
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="rounded bg-submarine mb-3">
+                        <img src="img/submarine.png" alt="">
+                    </div>
+                </div>
+            </div>
+
+        </section>
         <!-- ABOUT -->
         <section></section>
         <!-- CONTACT ME -->

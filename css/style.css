@@ -12,6 +12,7 @@ header{
     background-color: #303d4e;
 }
 
+
 .navbar a{
     color: white;
 }
@@ -23,44 +24,82 @@ header img{
     height: 200px;
 }
 
-.strip{
-    height: 2px;
-    background-color: white;
-    width: 300px;
-    display: inline;
+#portfolio img{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+
+
+[class^="col-"]{
+
+    /* pa: 0.5rem; */
+
+}
+
+/* Backgrounds colors */
+
+.bg-gruna{
+    background-color: #ba4b63;
+}
+
+.bg-cake{
+    background-color: #1ea4b6;
+}
+
+.bg-circus{
+    background-color: #130f0f;
+}
+
+.bg-game{
+    background-color: #1c83c1;
+}
+
+.bg-safe{
+    background-color: #0e38b5;
+}
+
+.bg-submarine{
+    background-color: #ccb2a3;
 }
 
  /* ------------------  Media Queris------------------ */
  
  
- /* // X-Small devices (portrait phones, less than 576px) */
- @media (min-width: 520.98px) { 
+ /* // Small devices  (landscape phones, 576px and up) */
+ @media (min-width: 576px) { 
 
-    h2{
-        font-size: 3 rem;
+    .container-fluid{
+        margin: 0 1.5rem;
     }
+
+    header img{
+        width: 300px;
+        height: 300px;
+    }
+
+ }
  
+ /* // Medium devices  (tablets, 768px and up) */
+ @media (min-width: 768px) { 
+
+    .container-fluid{
+        margin: 0 5rem;
+    }
+    
+
   }
  
- /* // Small devices (landscape phones, less than 768px) */
- @media (min-width: 767.98px) { 
+ /* // Large devices  (desktops, 992px and up) */
+ @media (min-width: 992px) { 
 
-    h2{
-        font-size: 4 rem;
-    }
- 
-
- }
- 
- /* // Medium devices (tablets, less than 992px) */
- @media (min-width: 991.98px) { 
-
-    h2{
-        font-size: 6 rem;
+    .container-fluid{
+        margin: 0 10rem;
     }
 
+  }
 
- }
 
 
 
