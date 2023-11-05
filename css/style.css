@@ -1,9 +1,27 @@
 
-/* My Style Sheet */
+/* Common */
 .my_wrapper{
     max-width: 1000px;
     margin: 0 auto;
 }
+
+.strip{
+    height: 3px;
+    width: 60px;
+    display: inline-block;
+    margin: 5px;
+    border-radius: 50px;
+}
+
+.section-title{
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 3rem;
+    padding-top: 2rem;
+}
+
+
+/* Header */
 header{
     background-color: #1abc9c;
 }
@@ -12,18 +30,25 @@ header{
     background-color: #303d4e;
 }
 
-
 .navbar a{
     color: white;
 }
 
+.logo{
+    font-size: 1rem ;
+}
 
+.user-text{
+    font-size: 2rem ;
+    font-weight: bold;
+}
 
 header img{
     width: 200px;
     height: 200px;
 }
 
+/* Portfolio */
 #portfolio img{
     width: 200px;
     height: 200px;
@@ -31,12 +56,82 @@ header img{
 }
 
 
+/* About */
 
-[class^="col-"]{
-
-    /* pa: 0.5rem; */
-
+#about{
+    background-color: #1abc9c;
 }
+
+/* Contact me */
+
+.my-form-control {
+    display: block;
+    width: 100%;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    border: var(--bs-border-width) solid var(--bs-border-color);
+    border-top: none;
+    border-right: none;
+    border-left: none;
+  }
+
+
+ /* ------------------  Media Queris------------------ */
+ 
+ 
+ /* // Small devices  (landscape phones, 576px and up) */
+ @media (min-width: 576px) { 
+
+    .container-fluid{
+        margin: 0 1.5rem;
+    }
+
+    header img{
+        width: 300px;
+        height: 300px;
+    }
+
+    .section-title{
+        font-size: 2.5rem;
+        font-weight: bold;
+    }
+
+    .user-text{
+        font-size: 3rem ;
+    }
+
+    .logo{
+        font-size: 1.5rem ;
+    }
+
+ }
+ 
+ /* // Medium devices  (tablets, 768px and up) */
+ @media (min-width: 768px) { 
+
+    .container-fluid{
+        margin: 0 5rem;
+    }
+    
+
+
+
+  }
+ 
+ /* // Large devices  (desktops, 992px and up) */
+ @media (min-width: 992px) { 
+
+    .container-fluid{
+        margin: 0 10rem;
+    }
+
+  }
+
+
+
+
+
 
 /* Backgrounds colors */
 
@@ -64,44 +159,14 @@ header img{
     background-color: #ccb2a3;
 }
 
- /* ------------------  Media Queris------------------ */
- 
- 
- /* // Small devices  (landscape phones, 576px and up) */
- @media (min-width: 576px) { 
-
-    .container-fluid{
-        margin: 0 1.5rem;
-    }
-
-    header img{
-        width: 300px;
-        height: 300px;
-    }
-
- }
- 
- /* // Medium devices  (tablets, 768px and up) */
- @media (min-width: 768px) { 
-
-    .container-fluid{
-        margin: 0 5rem;
-    }
-    
-
-  }
- 
- /* // Large devices  (desktops, 992px and up) */
- @media (min-width: 992px) { 
-
-    .container-fluid{
-        margin: 0 10rem;
-    }
-
-  }
+.bg-button{
+    background-color: #1abc9c;
+    border: none;
+}
 
 
+/* Font Size */
 
-
-
-
+.f-s-15rem{
+    font-size: 1.5rem;
+}

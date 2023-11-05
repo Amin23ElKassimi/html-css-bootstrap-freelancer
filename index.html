@@ -16,13 +16,14 @@
 </head>
 
 <body>
+    
     <!-- Header -->
     <header>
         <!-- Nabar -->
-        <nav class="navbar navbar-expand-lg bg-navcolor text-light">
+        <nav class="navbar navbar-expand-lg bg-navcolor text-uppercase navbar-dark">
             <div class="container-fluid">
               <a class="text-decoration-none" href="#">
-                    <h1>Start Bootstrap</h1>
+                    <div class="logo fw-bold">Start Bootstrap</div>
               </a>
               <button class="navbar-toggler d-block d-sm-none" >
                 <span class="navbar-toggler-icon"></span>
@@ -40,7 +41,7 @@
                     </ul>
               </div>
             </div>
-          </nav>
+        </nav>
           <!-- Bottom Header -->
         <div class="container text-center text-light">
                 <div class="mt-5">
@@ -49,18 +50,30 @@
                         START BOOTSTRAP
                     </div>
                 </div>
-                <i class="fa-solid fa-star"></i>
+                <div class="d-flex justify-content-center align-items-center pb-3 pt-3">
+                    <div class="strip bg-white"></div>
+                    <i class="fa-solid fa-star f-s-15rem"></i>
+                    <div class="strip bg-white"></div>
+                </div>
                 <div class="pb-5">
                     GRAPHIC ARTIST - WEB DESIGNER - ILLUSTRATOR
                 </div>
-          </div>
+        </div>
     </header>
+
     <!-- Main -->
     <main>
         <!-- PORTFOLIO -->
         <section id="portfolio" class="container text-center">
             <div class="row">
-                <h2>PORTFOLIO</h2>
+                <div class="section-title">
+                    PORTFOLIO
+                </div>
+                <div class="d-flex justify-content-center align-items-center pb-3 pt-3">
+                    <div class="strip bg-black"></div>
+                    <i class="fa-solid fa-star f-s-15rem"></i>
+                    <div class="strip bg-black"></div>
+                </div>
                 <div class="col-12 col-md-6 col-lg-4">
                     <div class=" rounded bg-gruna mb-3">
                         <img src="img/cabin.png" alt="">
@@ -95,11 +108,85 @@
 
         </section>
         <!-- ABOUT -->
-        <section></section>
+        <section id="about">
+            <div class="container text-center text-light">
+                <div class="section-title">
+                    ABOUT
+                </div>
+                <!-- star Separetor -->
+                <div class="d-flex justify-content-center align-items-center pb-3 pt-3">
+                    <div class="strip bg-white"></div>
+                    <i class="fa-solid fa-star f-s-15rem"></i>
+                    <div class="strip bg-white"></div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                        Est obcaecati hic enim libero accusamus, reiciendis dolores labore ab vitae eaque,
+                        quibusdam consectetur aperiam asperiores odit id, earum soluta iste voluptatibus!
+                        </p>
+                    </div>
+                    <div class="col-md-6">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                        Est obcaecati hic enim libero accusamus, reiciendis dolores labore ab vitae eaque,
+                        quibusdam consectetur aperiam asperiores odit id, earum soluta iste voluptatibus!
+                        </p>
+                    </div>
+                    <div class="col-12 p-5">
+                        <a class="btn btn-outline-light" href="#" role="button">
+                            <i class="fa-solid fa-download"></i> Download
+                        </a>
+                    </div>
+                </div>
+             </div>
+        </section>
         <!-- CONTACT ME -->
-        <section></section>
+        <section>
+            <div class="container text-center">
+                <div class="section-title">
+                    CONTACT ME
+                </div>
+                <!-- star Separetor -->
+                <div class="d-flex justify-content-center align-items-center pb-3 pt-3">
+                    <div class="strip bg-black"></div>
+                    <i class="fa-solid fa-star f-s-15rem"></i>
+                    <div class="strip bg-black"></div>
+                </div>
+                <!--------- Form --------->
+                <!-- Name -->
+                <div class="mb-3">
+                    <input type="text" class="my-form-control"  placeholder="Name" 
+                    required 
+                    minlength="6"
+                    maxlength="20" >
+                </div>
+                <!-- Phone Number -->
+                <div class="mb-3">
+                    <input type="tel" class="my-form-control"  placeholder="Phone Number"  onkeypress="return isNumberKey(event)"  formControlName="number"
+                    required 
+                    minlength="10"
+                    maxlength="12" >
+                </div>
+                <!-- Email -->
+                <div class="mb-3">
+                    <input type="email" class="my-form-control" placeholder="name@example.com"
+                    required 
+                    minlength="6"
+                    maxlength="30" >
+                </div>
+                <!-- Message -->
+                <div class="mb-3">
+                    <textarea class="my-form-control"  rows="3" placeholder="Message"></textarea>
+                </div>
+                <!-- Submit -->
+                <div class="col-12 text-start">
+                    <button class="btn btn-primary bg-button mb-5" type="submit">Send</button>
+                </div>
+            </div>
+        </section>
     </main>
 
+    <!-- Footer -->
     <footer></footer>
     
 </body>
